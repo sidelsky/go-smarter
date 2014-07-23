@@ -61,8 +61,18 @@ background-color: red;
 
 
 
+body.sub-inner {
+	.wrapper {
+		//@extend %bdr;
+		position: absolute;
+		min-height: 800px;
+		.inner {
+			max-height: 800px;
+		}
+	}
+}
 
-
+ 
  
 .info-box {
 	width: 480px;
@@ -91,14 +101,12 @@ background-color: red;
 	overflow: auto;
 }
 
-.jspDrag {
+.jspDrag { 
 	background: $white;
 	width: 1px;
 	&:active,
 	&:hover {
 		width: 5px;
-//		@include transition-duration(0.1s);
-//		@include transition-timing-function(ease-out);
 		@include transition(width 0.1s ease-out);
 		left: -2px;
 	}
@@ -110,6 +118,11 @@ background-color: red;
 	}
 
 
+body.sub-inner {
+	.jspDrag {
+		background: $blue;
+	}
+}
 
 /*.slides li  {
 		//width: 100% !important;

@@ -1,3 +1,4 @@
+@import "fittext";
 @import "normalize.scss";
 @import "compass/utilities";
 @import "compass/typography/vertical_rhythm";
@@ -64,6 +65,7 @@ h1, h2, h3, h4 {
 
 h1, h2 {
 	@include adjust-font-size-to(48px, 6);
+	@include fittext($min-media: 200px, $max-media: 1900px, $min-font-size: 18px, $max-font-size: 48px, $media-increment: 100, $font-increment: 2.5, $ratio: 1, $round: false)
 	//@include rhythm(0, 0, 0, 2); //Margin top, Padding top, Padding bottom, Margin bottom
 }
 

@@ -8,6 +8,9 @@ images_dir = "img"
 javascripts_dir = "js"
 http_generated_images_path = "../img"
 
+#https://github.com/bookcasey/fittext#fittext
+require "fittext"
+
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
 
