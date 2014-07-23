@@ -1,0 +1,217 @@
+.header {
+	background: $white;
+	height: 150px;
+	.inner {
+		//@extend %bdr;
+		@extend %max-width;
+		margin: 0 auto;
+		.logo-container {
+			height: 113px;
+			position: relative;
+			.logo {
+				width: 192px;
+				margin-top: 20px;
+			}
+		}
+	}
+	.menu {
+		//@extend %bdr;
+		background: $blue;
+		.main-navigation {
+			display: table;
+			width: 100%;
+			border-collapse: collapse;
+			border: none;
+			ul {
+				display: table-row;
+				@include clearfix;
+				>li {
+					float: left;
+					display: table-cell;
+					margin: 0;
+					width: 20%;
+					position: relative;
+					border-right: solid 1px $white;
+					&:first-child {
+						border-left: solid 1px $white;
+					}
+					&.travel { //Travel
+						//background-color: $green;
+						&:hover {
+							background-color: $green;
+						}
+						.menu-wrapper {
+							background-color: $green;
+							width: 100%;
+							.sub-menu {
+								background-color: $green;
+								width: 100%;
+								li {
+									width: 100%; 
+									.alpha {	
+										background-position: -6px -87px;
+										margin-bottom: 10px;
+									}
+									.bravo {	
+										background-position: -7px -167px;
+									}
+								}
+							}
+						}
+					}
+					&.work { //Work
+						//background-color: $purple;
+						&:hover {
+							background-color: $purple;
+						}
+						.menu-wrapper {
+							width: 460px;
+							max-width: 460px;
+							background-color: $purple;
+							.sub-menu {
+								background-color: $purple;
+								width: 50%;
+								//@extend %bdr;
+								li {
+									width: 100%; 
+									&.first {
+										height: 110px;
+									}
+									.alpha {	
+										background-position: -6px -46px;
+									}
+									.bravo {	
+										background-position: -7px -206px;
+									}
+								}
+							}
+						}
+					}
+					&.school { //School
+						//background-color: $dark-blue;
+						&:hover {
+							background-color: $dark-blue;
+						}
+						.menu-wrapper {
+							width: 460px;
+							max-width: 460px;
+							background-color: $dark-blue;
+							.sub-menu {
+								background-color: $dark-blue;
+								width: 50%;
+								//@extend %bdr;
+								li {
+									width: 100%; 
+									&.first {
+										height: 135px;
+									}
+									.alpha {	
+										background-position: -6px -46px;
+									}
+									.bravo {	
+										background-position: -7px -206px;
+									}
+								}
+							}
+						}
+					}
+					&.jobseekers {
+						//background-color: $orange;
+						&:hover {
+							background-color: $orange;
+						}
+					}
+					&.blog {
+						//background-color: $dark-orange;
+						&:hover {
+							background-color: $dark-orange;
+						}
+					}
+					a {
+						color: $white;
+						//display: block;
+						text-decoration: none;
+						padding: 0.3em 0.7em;
+						text-align: center;
+						text-transform: uppercase;
+						@include adjust-font-size-to(15px);
+					}
+					.menu-wrapper {
+						position: absolute;
+						top: 33px;
+						z-index: 200;
+						padding: 10px 5px;
+						left: -9999px;
+						opacity: 0;
+						@include transition(opacity 1s ease-out);
+						&.tap {
+							left: 0px;
+							opacity: 1;
+							@include transition(opacity 0.2s ease-in);
+						}
+						//Submenu
+						.sub-menu {
+							position: relative;
+							display: block;
+							float: left;
+							li {
+								border: none; 
+								display: block;
+								background: url(../img/bg-hr.gif) no-repeat center bottom;
+								&:last-child {
+									background: none;
+								}
+								a {
+									text-align: left !important;
+								}
+								i {
+									background:transparent url('../img/icons-s1398ce0c98.png') no-repeat;
+									display: block;
+									width: 26px;
+									height: 32px;
+									margin-left: 10px;
+									//@extend %bdr;
+								}
+							}
+						}
+						.menu {
+							background: url(../img/bg-hr.gif) no-repeat center bottom;
+							padding-bottom: 10px;
+							margin-bottom: 10px;
+							&:last-child {
+								background: none;
+								padding-bottom: 0px;
+								margin-bottom: 0px;
+							}
+							li {
+								display: block;
+								background: none !important;
+								@include adjust-font-size-to(11px, 0.95);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+//body > header > div.menu > nav > ul > li.travel.hasSub > div.menu-wrapper
+.hasSub {
+	.fa-angle-down {
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		color: $white;
+		cursor: pointer;
+		&:hover .sub-menu li a {
+				color: red;
+		}
+	}
+}
+
+
+body.work {
+	.work {
+		background:$purple;
+	}
+}

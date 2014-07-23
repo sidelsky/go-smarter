@@ -1,0 +1,108 @@
+//Helpers
+%bdr {
+	outline:solid red 1px;
+}
+ 
+%open_sansextrabold {
+	font-family: 'open_sansextrabold';
+}
+
+%open_sansbold {
+	font-family: 'open_sansbold';
+}
+
+%open_sansregular {
+	font-family: 'open_sansregular';
+}
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+	@include box-sizing(border-box);
+}
+
+//Grid layout structure
+$column-width: 106px;
+$gutter-width: 0px;
+$columns: 12;
+
+//$column-width: 60;
+//$gutter-width: 20;
+//$columns: 12;
+
+$total-width: 100%; // Switch from pixels to percentages
+
+%max-width {
+ max-width: 64em;
+}
+
+//Colours
+$black: #000;
+$white: #fff;
+$red: #b2121a;
+
+$grey: #aaaaaa;
+
+$blue: #27aae0;
+$green: #8dc53e;
+$purple: #92278f;
+$dark-blue: #1c75bb;
+$orange: #f7931e;
+$dark-orange: #f05b40;
+
+/*.blue {
+	color: $blue;
+}
+.green {
+	color: $green;
+}
+.purple {
+	color: $purple;
+}
+.dark-blue {
+	color: $dark-blue;
+}
+.orange {
+	color: $orange;
+}
+.dark-orange {
+	color: $dark-orange;
+}*/
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+.padding-tb {
+	@include rhythm(0, 3, 3, 0); //Margin top, Padding top, Padding bottom, Margin bottom
+}
+
+.padding-tb-small {
+	@include rhythm(0, 2, 2, 0); //Margin top, Padding top, Padding bottom, Margin bottom
+}
+
+.cols {
+	@include column(1);
+	@extend %bdr;
+	@include clearfix;
+}
+
+.padme {
+	padding: 2em;
+}
+//Icons
+//.icons-compass,
+//.icons-globe,
+//.icons-map,
+//.icons-people,
+//.icons-school,
+//.icons-smarter{ background: url('../img/icons-sba3bfbd62c.png') no-repeat; }
+
+////Medium
+//@media screen and (max-width: 60em) { 
+//	@include adjust-font-size-to(36px, 1);
+//}
+////Small
+//@media screen and (max-width: 37.5em) {
+//	@include adjust-font-size-to(24px, 1.6);
+//}

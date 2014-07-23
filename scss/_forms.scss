@@ -1,0 +1,69 @@
+form {
+	position: relative;
+	overflow: hidden;
+	@include rhythm(0, 0, 0, 2); //Margin top, Padding top, Padding bottom, Margin bottom
+	label {
+		position: absolute;
+		text-indent: -9999px;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	
+	input[type='text'],
+	input[type='search'],
+	input[type='password'],
+	input[type='submit'],
+	select {
+		width: 100%;
+		border: none;
+		background: $white;
+		padding: 0.4em;
+		-webkit-appearance: none;
+  	-webkit-border-radius: 0px;
+		margin: 3px 0;
+	}
+	
+	select {
+		width: 32.333%;
+		margin: 10px 0;
+		background: $white url(../img/select-menu-arrow.gif) no-repeat center right;
+	}
+	
+//	input[type='text'] {
+//		@include transition(all 0.8s ease-in-out);
+//		[placeholder]:focus::-webkit-input-placeholder {
+//			@include transition(all 0.8s ease-in-out);
+//		}
+//	}
+	[placeholder]::-webkit-input-placeholder,
+	select {
+		color: $grey;
+	}	
+	
+	[placeholder]:focus::-webkit-input-placeholder {
+			@include transition(text-indent 0.8s ease-in-out);
+		  text-indent: -200%;
+		}
+	
+	input[type='submit'] {
+		border-bottom: 3px solid $dark-blue;
+		font-weight: 600;
+		color: $dark-blue;
+		letter-spacing: 2px;
+		@include transition(all 0.2s ease-in);
+		&:hover,
+		&:active {
+			border-bottom: 3px solid $white;
+			@include transition(all 0.2s ease-in);
+			letter-spacing: 2px;
+			color: $white;
+			background: $dark-blue;
+		}
+	}
+	&.search {
+		input[type='text'] {
+			background: $white url(../img/search-icon.gif) no-repeat center right;
+		}
+	}
+}
+

@@ -1,0 +1,34 @@
+.wrapper {
+	position: absolute;
+	top: 145px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 0;
+	.col {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+	}
+	.left {
+		.content {
+			//@extend %bdr;
+			//max-width: 600px;
+			.inner {
+				position: absolute;
+				top: 0;
+				right: 0;
+				//@extend %bdr;
+				max-width: 41.3em; 
+				//@include column(6);
+				background: $white;
+				a {
+					text-decoration: underline;
+					color: inherit;
+				}
+			}
+		}
+	}
+}
+	
+	

@@ -1,0 +1,128 @@
+header {
+background-color: red;
+}
+
+
+.wrapper {
+	position: absolute;
+	top: 145px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 0;
+	.col {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+	}
+	.left {
+		width: 60%;
+		@include transition(width 0.8s ease-in-out);
+//		@include transition-duration(0.8s);
+//		@include transition-timing-function(ease-out);
+//		@include transition-property(width);
+  	//@include transition-delay(2s);
+		&.open {
+			width: 100%;
+			@include transition(width 0.8s ease-in-out);
+//			@include transition-duration(0.5s);
+//			@include transition-timing-function(ease-in);
+//			@include transition-property(width);
+  		//@include transition-delay(2s);
+		}
+		.slider {
+			.flexslider {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				.flex-viewport {
+					height: 100% !important;
+					//@extend %bdr;
+					.slides {
+						height: 100% !important;
+						//width: 100% !important;
+						li {
+							//width: 100% !important;
+							&.bg-image {
+								height: 100% !important;
+								position: relative;
+								background-position: center center;
+								background-size: cover;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+ 
+.info-box {
+	width: 480px;
+	//height: 300px;
+	position: absolute;
+	right: 0;
+	top: 40px;
+	z-index: 100;
+	background: $blue;
+	background: rgba( $blue, .5 );
+	color: $white;
+	@include text-shadow($black 1px 0px 2px);
+	.inner {
+		padding: 2em;
+		h2 {
+		}
+		p {
+		}
+	}
+}
+
+//Scroll bars
+.scroll-pane {
+	width: 100%;
+	//max-height: 200px;
+	overflow: auto;
+}
+
+.jspDrag {
+	background: $white;
+	width: 1px;
+	&:active,
+	&:hover {
+		width: 5px;
+//		@include transition-duration(0.1s);
+//		@include transition-timing-function(ease-out);
+		@include transition(width 0.1s ease-out);
+		left: -2px;
+	}
+}
+ 
+.jspTrack  {
+		background: rgba(0,0,0,0.5);
+		width: 1px;
+	}
+
+
+
+/*.slides li  {
+		//width: 100% !important;
+	//width: 100% !important;
+//	position: absolute;
+//	top: 0;
+//	left: 0  !important;
+//	right: 0px !important;
+//	bottom: 0;
+	&.open {
+		//width: 100% !important;
+		@include transition-duration(0.5s);
+		@include transition-timing-function(ease-out);
+	}
+}*/
+
