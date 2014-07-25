@@ -30,6 +30,7 @@
 					display: table-cell;
 					margin: 0;
 					width: 20%;
+					padding: 0.3em 0.7em;
 					position: relative;
 					border-right: solid 1px $white;
 					&:first-child {
@@ -129,26 +130,20 @@
 					}
 					a {
 						color: $white;
-						//display: block;
+						display: block;
 						text-decoration: none;
-						padding: 0.3em 0.7em;
 						text-align: center;
 						text-transform: uppercase;
 						@include adjust-font-size-to(15px);
 					}
 					.menu-wrapper {
 						position: absolute;
-						top: 33px;
+						top: 39px;
 						z-index: 200;
 						padding: 10px 5px;
 						left: -9999px;
 						opacity: 0;
-						@include transition(opacity 1s ease-out);
-						&.tap {
-							left: 0px;
-							opacity: 1;
-							@include transition(opacity 0.2s ease-in);
-						}
+						//display: none;
 						//Submenu
 						.sub-menu {
 							position: relative;
@@ -203,11 +198,24 @@
 		right: 20px;
 		color: $white;
 		cursor: pointer;
-		&:hover .sub-menu li a {
-				color: red;
-		}
+	}
+	&:hover .menu-wrapper {
+		left: 0px !important;
+		opacity: 1 !important;
+		//display: block !important;
 	}
 }
+
+
+// .hasSub {
+// 	a {
+// 		color: green !important;
+// 		&:hover .menu-wrapper{
+// 			left: 0px  !important;
+// 			opacity: 1 !important;
+// 		}
+// 	}
+// }
 
 
 body.work {

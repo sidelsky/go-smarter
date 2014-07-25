@@ -5,7 +5,7 @@ background-color: red;
 
 .wrapper {
 	position: absolute;
-	top: 145px;
+	top: 151px;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -80,16 +80,16 @@ body.sub-inner {
 	.wrapper {
 	width: 100%;
 	//display: table;
-	@extend %bdr;
+	//@extend %bdr;
 	position: relative;
 	top: 0px;
 	@include clearfix;
 	.left {
-		@extend %bdr;
+		//@extend %bdr;
 		float: left;
 		width: 60%;
 		.content {
-			@extend %bdr;
+			//@extend %bdr;
 			width: 742px;
 			float: right;
 		}

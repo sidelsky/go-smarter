@@ -36,25 +36,25 @@ $('document').ready(function () {
 $('.main-navigation >ul >li:has(.sub-menu)').addClass('hasSub');
 $(".hasSub").append("<i class='fa fa-angle-down' id='arrow'></i>");
 
+$('ul.sf-menu').superfish();	
 	
+// 	$(".fa-angle-down").click(function() { 
+// 	//When trigger is clicked...  
 	
-	$(".fa-angle-down").click(function() { 
-	//When trigger is clicked...  
-	
-		//Following events are applied to the subnav itself (hiding and showing subnav)  
-		$(this).parent().addClass('tap').find(".menu-wrapper").addClass('tap'); //Drop down the subnav on click  
+// 		//Following events are applied to the subnav itself (hiding and showing subnav)  
+// 		$(this).parent().addClass('tap').find(".menu-wrapper").addClass('tap'); //Drop down the subnav on click  
 		
-		$(this).parent().hover(function() {
-		}, function(){  
-			$(this).removeClass('tap').find(".menu-wrapper").removeClass('tap');
-		});  
+// 		$(this).parent().hover(function() {
+// 		}, function(){  
+// 			$(this).removeClass('tap').find(".menu-wrapper").removeClass('tap');
+// 		});  
 		
-	//Following events are applied to the trigger (Hover events for the trigger)  
-	}).hover(function() {  
-		$(this).addClass("subhover"); //On hover over, add class "subhover"  
-	}, function(){  //On Hover Out  
-		$(this).removeClass("subhover"); //On hover out, remove class "subhover"  
-	});
+// 	//Following events are applied to the trigger (Hover events for the trigger)  
+// 	}).hover(function() {  
+// 		$(this).addClass("subhover"); //On hover over, add class "subhover"  
+// 	}, function(){  //On Hover Out  
+// 		$(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+// 	});
 	
 	
 	
