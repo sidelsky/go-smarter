@@ -89,9 +89,14 @@ body.sub-inner {
 		float: left;
 		width: 60%;
 		.content {
-			//@extend %bdr;
 			width: 742px;
 			float: right;
+			.padme {
+				img {
+					@include rhythm(1, 0, 0, 0); //Margin top, Padding top, Padding bottom, Margin bottom
+					width: 100%;
+				}
+			}
 		}
 	}
 	.right {

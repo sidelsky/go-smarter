@@ -27,17 +27,28 @@ function wScroll(){
 }
 
 
+// initialise plugin
+$('.sf-menu').superfish({
+	delay:       		1000,                            	// one second delay on mouseout
+	animation:   		{opacity:'show', height:'show'},  // fade-in and slide-down animation
+	animationOut:  	{height:'hide'},
+	speed:       		300,                          		// faster animation speed
+	autoArrows:  		false                            	// disable generation of arrow mark-up
+});
+
 $('document').ready(function () {
  	
 	initFlex();
 	wScroll();
 	
-	
 $('.main-navigation >ul >li:has(.sub-menu)').addClass('hasSub');
 $(".hasSub").append("<i class='fa fa-angle-down' id='arrow'></i>");
 
-$('ul.sf-menu').superfish();	
-	
+// $('ul.sf-menu').superfish({
+// 	delay: 1000,  
+// }, console.log();
+// );	
+
 // 	$(".fa-angle-down").click(function() { 
 // 	//When trigger is clicked...  
 	
@@ -119,12 +130,13 @@ $('ul.sf-menu').superfish();
 //	
 	
 	
- 	var windowWidth = $(window).width(),
- 			windowHeight = $(window).height(),
+ 	var windowWidth = $(document).width(),
+ 			windowHeight = $(document).height(),
+			
 			flexsliderWidth = $('.flexslider').width(),
 			wrapperHeight = $('.right').height()
 	
-
+			$(".right").css("min-height", windowHeight-151);
 		
 /*	$('.fa-angle-left').click(function () {
  		$('.fa-angle-right').removeClass('hidden');

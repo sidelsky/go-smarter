@@ -24,11 +24,27 @@
 		overflow: auto;
 		color: $white;
 	}
+	a {
+		color: $white;
+		@include adjust-font-size-to(12px, 0.5);
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 //Work section
 body.work {
 	.right {
 		background-color: $purple;
+	}
+}
+
+
+//News and events
+body.news-and-events {
+	.right {
+		background-color: $dark-orange;
 	}
 }

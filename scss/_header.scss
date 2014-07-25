@@ -138,11 +138,12 @@
 					}
 					.menu-wrapper {
 						position: absolute;
-						top: 39px;
+						top: 38px;
 						z-index: 200;
 						padding: 10px 5px;
 						left: -9999px;
 						opacity: 0;
+						border-top: solid 1px $white;
 						//display: none;
 						//Submenu
 						.sub-menu {
@@ -158,6 +159,13 @@
 								}
 								a {
 									text-align: left !important;
+									@include transition(all 0.5s ease-out);
+									color: rgba($white, 0.8);
+									&:hover {
+										padding-left: 5px;
+										@include transition(all 0.2s ease-in);
+										color: $white;
+									}
 								}
 								i {
 									background:transparent url('../img/icons-s1398ce0c98.png') no-repeat;
