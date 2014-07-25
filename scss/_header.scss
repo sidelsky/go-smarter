@@ -1,6 +1,6 @@
 .header {
 	background: $white;
-	height: 150px;
+	//height: 150px;
 	.inner {
 		//@extend %bdr;
 		@extend %max-width;
@@ -36,7 +36,7 @@
 						border-left: solid 1px $white;
 					}
 					&.travel { //Travel
-						//background-color: $green;
+						background-color: $green;
 						&:hover {
 							background-color: $green;
 						}
@@ -60,7 +60,7 @@
 						}
 					}
 					&.work { //Work
-						//background-color: $purple;
+						background-color: $purple;
 						&:hover {
 							background-color: $purple;
 						}
@@ -88,7 +88,7 @@
 						}
 					}
 					&.school { //School
-						//background-color: $dark-blue;
+						background-color: $dark-blue;
 						&:hover {
 							background-color: $dark-blue;
 						}
@@ -116,13 +116,13 @@
 						}
 					}
 					&.jobseekers {
-						//background-color: $orange;
+						background-color: $orange;
 						&:hover {
 							background-color: $orange;
 						}
 					}
 					&.blog {
-						//background-color: $dark-orange;
+						background-color: $dark-orange;
 						&:hover {
 							background-color: $dark-orange;
 						}

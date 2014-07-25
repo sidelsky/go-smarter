@@ -2712,7 +2712,7 @@ body:after {
 }
 
 /* line 2, ../scss/_vars.scss */
-.cols {
+.cols, body.sub-inner .wrapper, body.sub-inner .wrapper .left, body.sub-inner .wrapper .left .content {
   outline: solid red 1px;
 }
 
@@ -3279,17 +3279,46 @@ header {
   background-size: cover;
 }
 
-/* line 65, ../scss/_structure.scss */
+/* line 80, ../scss/_structure.scss */
 body.sub-inner .wrapper {
-  position: absolute;
-  min-height: 800px;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  *zoom: 1;
 }
-/* line 69, ../scss/_structure.scss */
-body.sub-inner .wrapper .inner {
-  max-height: 800px;
+/* line 27, ../scss/_grid.scss */
+body.sub-inner .wrapper:before, body.sub-inner .wrapper:after {
+  content: "";
+  display: table;
+}
+/* line 31, ../scss/_grid.scss */
+body.sub-inner .wrapper:after {
+  clear: both;
+}
+/* line 87, ../scss/_structure.scss */
+body.sub-inner .wrapper .left {
+  float: left;
+  width: 60%;
+}
+/* line 91, ../scss/_structure.scss */
+body.sub-inner .wrapper .left .content {
+  width: 742px;
+  float: right;
+}
+/* line 97, ../scss/_structure.scss */
+body.sub-inner .wrapper .right {
+  width: 40%;
+  right: 0;
+  float: right;
+}
+/* line 102, ../scss/_structure.scss */
+body.sub-inner .wrapper .right .inner {
+  max-width: 450px;
+  position: relative;
+  color: white;
 }
 
-/* line 77, ../scss/_structure.scss */
+/* line 112, ../scss/_structure.scss */
 .info-box {
   width: 480px;
   position: absolute;
@@ -3301,23 +3330,23 @@ body.sub-inner .wrapper .inner {
   color: white;
   text-shadow: black 1px 0px 2px;
 }
-/* line 88, ../scss/_structure.scss */
+/* line 123, ../scss/_structure.scss */
 .info-box .inner {
   padding: 2em;
 }
 
-/* line 98, ../scss/_structure.scss */
+/* line 133, ../scss/_structure.scss */
 .scroll-pane {
   width: 100%;
   overflow: auto;
 }
 
-/* line 104, ../scss/_structure.scss */
+/* line 139, ../scss/_structure.scss */
 .jspDrag {
   background: white;
   width: 1px;
 }
-/* line 108, ../scss/_structure.scss */
+/* line 143, ../scss/_structure.scss */
 .jspDrag:active, .jspDrag:hover {
   width: 5px;
   -webkit-transition: width 0.1s ease-out;
@@ -3327,13 +3356,13 @@ body.sub-inner .wrapper .inner {
   left: -2px;
 }
 
-/* line 115, ../scss/_structure.scss */
+/* line 150, ../scss/_structure.scss */
 .jspTrack {
   background: rgba(0, 0, 0, 0.5);
   width: 1px;
 }
 
-/* line 122, ../scss/_structure.scss */
+/* line 157, ../scss/_structure.scss */
 body.sub-inner .jspDrag {
   background: #27aae0;
 }
@@ -3537,7 +3566,6 @@ form.search input[type='text'] {
 /* line 1, ../scss/_header.scss */
 .header {
   background: white;
-  height: 150px;
 }
 /* line 4, ../scss/_header.scss */
 .header .inner {
@@ -3591,6 +3619,10 @@ form.search input[type='text'] {
 .header .menu .main-navigation ul > li:first-child {
   border-left: solid 1px white;
 }
+/* line 38, ../scss/_header.scss */
+.header .menu .main-navigation ul > li.travel {
+  background-color: #8dc53e;
+}
 /* line 40, ../scss/_header.scss */
 .header .menu .main-navigation ul > li.travel:hover {
   background-color: #8dc53e;
@@ -3617,6 +3649,10 @@ form.search input[type='text'] {
 /* line 55, ../scss/_header.scss */
 .header .menu .main-navigation ul > li.travel .menu-wrapper .sub-menu li .bravo {
   background-position: -7px -167px;
+}
+/* line 62, ../scss/_header.scss */
+.header .menu .main-navigation ul > li.work {
+  background-color: #92278f;
 }
 /* line 64, ../scss/_header.scss */
 .header .menu .main-navigation ul > li.work:hover {
@@ -3649,6 +3685,10 @@ form.search input[type='text'] {
 .header .menu .main-navigation ul > li.work .menu-wrapper .sub-menu li .bravo {
   background-position: -7px -206px;
 }
+/* line 90, ../scss/_header.scss */
+.header .menu .main-navigation ul > li.school {
+  background-color: #1c75bb;
+}
 /* line 92, ../scss/_header.scss */
 .header .menu .main-navigation ul > li.school:hover {
   background-color: #1c75bb;
@@ -3680,9 +3720,17 @@ form.search input[type='text'] {
 .header .menu .main-navigation ul > li.school .menu-wrapper .sub-menu li .bravo {
   background-position: -7px -206px;
 }
+/* line 118, ../scss/_header.scss */
+.header .menu .main-navigation ul > li.jobseekers {
+  background-color: #f7931e;
+}
 /* line 120, ../scss/_header.scss */
 .header .menu .main-navigation ul > li.jobseekers:hover {
   background-color: #f7931e;
+}
+/* line 124, ../scss/_header.scss */
+.header .menu .main-navigation ul > li.blog {
+  background-color: #f05b40;
 }
 /* line 126, ../scss/_header.scss */
 .header .menu .main-navigation ul > li.blog:hover {
