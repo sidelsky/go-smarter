@@ -51,6 +51,7 @@ form {
 		color: $dark-blue;
 		letter-spacing: 2px;
 		@include transition(all 0.2s ease-in);
+		height: 50px !important;
 		&:hover,
 		&:active {
 			border-bottom: 3px solid $white;

@@ -1,0 +1,194 @@
+//Sub menu opacity var.
+@media screen and (max-width: 37.5em) {
+	.menu {
+		display: block;
+		position: absolute;
+		width: 100%;
+		z-index: 100;
+		left: -100%;
+		@include transition(all 0.4s ease-in-out);
+		&.toggle {
+			left: 0;
+			@include transition(all 0.3s ease-in-out);
+		}
+		.main-navigation {
+			width: 100%;
+			border-collapse: collapse;
+			border: none;
+			@include clearfix;
+			ul {
+				margin: 0px;
+				padding: 0px;
+					li {
+
+						&.travel { //Travel
+							a {
+								background-color: $green;
+							}
+							.sub-menu {
+								li {
+									position: relative;
+									i {
+										&.alpha {	
+											background-position: -6px -87px;
+										}
+										&.bravo {	
+											background-position: -7px -167px;
+										}
+									}
+									a {
+										background-color: rgba($green, $opacity);
+									}
+								}
+							}
+						}
+
+						&.work { //Work
+							a {
+								background-color: $purple;
+							}
+							.sub-menu {
+								li {
+									position: relative;
+									i {
+										&.alpha {	
+											background-position: -6px -46px;
+										}
+										&.bravo {	
+											background-position: -7px -206px;
+										}
+									}
+								}
+								a {
+									background-color: rgba($purple, $opacity);
+								}
+							}
+						}
+
+						&.school { //School
+							>a {
+								background-color: $dark-blue;
+							}
+							.sub-menu {
+								li {
+									position: relative;
+									i {
+										&.alpha {	
+											background-position: -2px -125px;
+										}
+										&.bravo {	
+											background-position: -7px -0px;
+										}
+									}
+								}
+								a {
+									background-color: rgba($dark-blue, $opacity);
+								}
+							}
+						}
+
+						&.jobseekers {
+							a {
+								background-color: $orange;
+							}
+						}
+						&.blog {
+							a {
+								background-color: $dark-orange;
+							}
+						}
+					a {
+						text-align: left;
+						color: $white;
+						display: block;
+						text-decoration: none;
+						padding: 0 1em;
+						@include rhythm(0, 0.5, 0.5, 0); //Margin top, Padding top, Padding bottom, Margin bottom
+						@include adjust-font-size-to(18px, 1.2);
+						&:hover {
+
+						}
+					}
+					.sub-menu {
+						i {
+							top: 12px;
+							right: 8px;
+							background:transparent url('../img/icons-s1398ce0c98.png') no-repeat;
+							display: block;
+							width: 40px;
+							height: 32px;
+							position: absolute;
+						}
+					}
+				}
+			}
+		}
+	}
+	.plan-find-mobile {
+		display: block;
+		position: absolute;
+		z-index: 100;
+		width: 100%;
+		li {
+			border-bottom: solid $white 1px;
+			display: table;
+			width: 100%;
+			&:last-child {
+				border-bottom: solid $white 0px
+			}
+			a {
+				display: table-cell;
+				vertical-align: middle;
+				padding: 0 1em;
+				display: block;
+				color: $white;
+				background: $green;
+				text-decoration: none;
+				font-weight: 600;
+				@include rhythm(0, 0.5, 0.5, 0); //Margin top, Padding top, Padding bottom, Margin bottom
+				@include adjust-font-size-to(18px, 1.2);
+				//@include fittext($min-media: 200px, $max-media: 800px, $min-font-size: 1px, $max-font-size: 24px, $media-increment: 100, $font-increment: 2.5, $ratio: 1, $round: false)
+			}
+		}
+		&.toggle {
+			display: none;
+		}
+	}
+
+
+	.hasSub {
+	position: relative;
+	.fa-angle-down {
+		position: absolute;
+		top: 0;
+		right: 20px;
+		color: $white;
+		cursor: pointer;
+		line-height: 63px;
+	}
+	.sub-menu {
+		display: none;
+		left: -100%;
+		.first {
+			border-top: solid 1px rgba($white, 0.9);
+			ul {
+				border-top: solid 1px rgba($white, 0.9);
+			}
+		}
+		li {
+			.sub-inner-menu {
+				li {
+					a {
+						@include adjust-font-size-to(14px, 0.8);
+					}
+				}
+			}
+		}
+	}
+	&:hover .sub-menu {
+		display: block;
+	}
+}
+
+//End Media q
+}

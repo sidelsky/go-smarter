@@ -3,6 +3,12 @@
 	right: 0;
 	background-color: $blue;
 	@include transition(width 0.8s ease-in-out);
+	@media screen and (max-width: 60em) {
+		
+	}
+	@media screen and (max-width: 37.5em) {
+		display: none;
+	}
 	h1 {
 		border-bottom: 1px solid $white;
 		@include rhythm(0, 0, 0.5, 0.5); //Margin top, Padding top, Padding bottom, Margin bottom

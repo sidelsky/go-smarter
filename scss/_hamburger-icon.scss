@@ -1,40 +1,106 @@
-.simple-menu { //Hamburger icon
-	//height: 100%;
-	position: absolute;
-	right: 1.5em;
-	@extend %bdr;
-	overflow: hidden;
-	text-align: right;
-	text-decoration: none;
+.menu-cliccato {
 	display: none;
-	&:before {
-		/* this is the important part */
-		content: '';
-		display: inline-block;
-		//height: 100%;
-		//vertical-align: middle;
-		/* this just takes care of whitespace added by having display:inline-block (there are other methods) */
-		//margin-left: -0.25em;
-	}
-	.fa-bars {
-		position: relative;
-		@include adjust-font-size-to(36px);
-		margin: 0 auto;
-		right: 0;
-	}
-	//Meduim
-	@media screen and (max-width: 60em) {
-		display: block;
-	}
-	//Small
-	@media screen and (max-width: 37.5em) {
-		//@include rhythm(1, 0, 0, 1); //Margin top, Padding top, Padding bottom, Margin bottom
-	}
-		.fa {
-			color: grey;
-			&:hover {
-			color: $black;
-		}
-	} 
-	//End Hamburger icon
 }
+
+@media screen and (max-width: 37.5em) {
+	.menu-cliccato {
+		display: block;
+		position: absolute;
+		right: 0.6em;
+		top: 18px;
+		width: 45px;
+		height: 45px;
+		z-index: 286;
+		padding: 7px 10px;
+		//border: solid 1px red;
+		background: $white;
+		.bar {
+			height: 5px;
+			position: relative;
+			margin: 4px 0;
+		}
+		.Sx_copy_5 {
+			background-color: $green;
+		}
+		.Sx_copy_4 {
+			background-color: $dark-blue;
+		}
+		.Sx_copy_3 {
+			background-color: $dark-orange;
+		}
+	}
+}
+
+
+
+// .Sx_copy_5 {
+//   background-color: rgb(240, 91, 64);
+//   position: absolute;
+//   left: 533px;
+//   top: 95px;
+//   width: 40px;
+//   height: 7px;
+//   z-index: 285;
+// }
+// .Sx_copy_4 {
+//   background-color: rgb(28, 117, 187);
+//   position: absolute;
+//   left: 533px;
+//   top: 81px;
+//   width: 40px;
+//   height: 8px;
+//   z-index: 284;
+// }
+// .Sx_copy_3 {
+//   background-color: rgb(141, 197, 62);
+//   position: absolute;
+//   left: 533px;
+//   top: 69px;
+//   width: 40px;
+//   height: 7px;
+//   z-index: 283;
+// }
+
+
+
+
+// .simple-menu { //Hamburger icon
+// 	//height: 100%;
+// 	position: absolute;
+// 	right: 1.5em;
+// 	@extend %bdr;
+// 	overflow: hidden;
+// 	text-align: right;
+// 	text-decoration: none;
+// 	display: none;
+// 	&:before {
+// 		/* this is the important part */
+// 		content: '';
+// 		display: inline-block;
+// 		//height: 100%;
+// 		//vertical-align: middle;
+// 		/* this just takes care of whitespace added by having display:inline-block (there are other methods) */
+// 		//margin-left: -0.25em;
+// 	}
+// 	.fa-bars {
+// 		position: relative;
+// 		@include adjust-font-size-to(36px);
+// 		margin: 0 auto;
+// 		right: 0;
+// 	}
+// 	//Meduim
+// 	@media screen and (max-width: 60em) {
+// 		display: block;
+// 	}
+// 	//Small
+// 	@media screen and (max-width: 37.5em) {
+// 		//@include rhythm(1, 0, 0, 1); //Margin top, Padding top, Padding bottom, Margin bottom
+// 	}
+// 		.fa {
+// 			color: grey;
+// 			&:hover {
+// 			color: $black;
+// 		}
+// 	} 
+// 	//End Hamburger icon
+// }
