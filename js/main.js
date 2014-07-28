@@ -28,13 +28,13 @@ function wScroll(){
 
 
 //Initialise plugin
-// $('.sf-menu').superfish({
-// 	delay:       		1000,                            	// one second delay on mouseout
-// 	animation:   		{opacity:'show', height:'show'},  // fade-in and slide-down animation
-// 	animationOut:  	{height:'hide'},
-// 	speed:       		200,                          		// faster animation speed
-// 	autoArrows:  		false                            	// disable generation of arrow mark-up
-// });
+$('.sf-menu').superfish({
+	delay:       		1000,                            	// one second delay on mouseout
+	animation:   		{opacity:'show', height:'show'},  // fade-in and slide-down animation
+	animationOut:  	{height:'hide'},
+	speed:       		200,                          		// faster animation speed
+	autoArrows:  		false                            	// disable generation of arrow mark-up
+});
 
 $('document').ready(function () {
  	

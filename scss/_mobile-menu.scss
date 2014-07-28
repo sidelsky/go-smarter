@@ -20,7 +20,6 @@
 				margin: 0px;
 				padding: 0px;
 					li {
-
 						&.travel { //Travel
 							a {
 								background-color: $green;
@@ -98,7 +97,7 @@
 							}
 						}
 					a {
-						text-align: left;
+						text-align: left !important;
 						color: $white;
 						display: block;
 						text-decoration: none;

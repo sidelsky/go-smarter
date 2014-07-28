@@ -3667,77 +3667,77 @@ form.search input[type='text'] {
     margin: 0px;
     padding: 0px;
   }
-  /* line 25, ../scss/_mobile-menu.scss */
+  /* line 24, ../scss/_mobile-menu.scss */
   .menu .main-navigation ul li.travel a {
     background-color: #8dc53e;
   }
-  /* line 29, ../scss/_mobile-menu.scss */
+  /* line 28, ../scss/_mobile-menu.scss */
   .menu .main-navigation ul li.travel .sub-menu li {
     position: relative;
   }
-  /* line 32, ../scss/_mobile-menu.scss */
+  /* line 31, ../scss/_mobile-menu.scss */
   .menu .main-navigation ul li.travel .sub-menu li i.alpha {
     background-position: -6px -87px;
   }
-  /* line 35, ../scss/_mobile-menu.scss */
+  /* line 34, ../scss/_mobile-menu.scss */
   .menu .main-navigation ul li.travel .sub-menu li i.bravo {
     background-position: -7px -167px;
   }
-  /* line 39, ../scss/_mobile-menu.scss */
+  /* line 38, ../scss/_mobile-menu.scss */
   .menu .main-navigation ul li.travel .sub-menu li a {
     background-color: rgba(141, 197, 62, 0.9);
   }
-  /* line 47, ../scss/_mobile-menu.scss */
+  /* line 46, ../scss/_mobile-menu.scss */
   .menu .main-navigation ul li.work a {
     background-color: #92278f;
   }
-  /* line 51, ../scss/_mobile-menu.scss */
+  /* line 50, ../scss/_mobile-menu.scss */
   .menu .main-navigation ul li.work .sub-menu li {
     position: relative;
   }
-  /* line 54, ../scss/_mobile-menu.scss */
+  /* line 53, ../scss/_mobile-menu.scss */
   .menu .main-navigation ul li.work .sub-menu li i.alpha {
     background-position: -6px -46px;
   }
-  /* line 57, ../scss/_mobile-menu.scss */
+  /* line 56, ../scss/_mobile-menu.scss */
   .menu .main-navigation ul li.work .sub-menu li i.bravo {
     background-position: -7px -206px;
   }
-  /* line 62, ../scss/_mobile-menu.scss */
+  /* line 61, ../scss/_mobile-menu.scss */
   .menu .main-navigation ul li.work .sub-menu a {
     background-color: rgba(146, 39, 143, 0.9);
   }
-  /* line 69, ../scss/_mobile-menu.scss */
+  /* line 68, ../scss/_mobile-menu.scss */
   .menu .main-navigation ul li.school > a {
     background-color: #1c75bb;
   }
-  /* line 73, ../scss/_mobile-menu.scss */
+  /* line 72, ../scss/_mobile-menu.scss */
   .menu .main-navigation ul li.school .sub-menu li {
     position: relative;
   }
-  /* line 76, ../scss/_mobile-menu.scss */
+  /* line 75, ../scss/_mobile-menu.scss */
   .menu .main-navigation ul li.school .sub-menu li i.alpha {
     background-position: -2px -125px;
   }
-  /* line 79, ../scss/_mobile-menu.scss */
+  /* line 78, ../scss/_mobile-menu.scss */
   .menu .main-navigation ul li.school .sub-menu li i.bravo {
     background-position: -7px -0px;
   }
-  /* line 84, ../scss/_mobile-menu.scss */
+  /* line 83, ../scss/_mobile-menu.scss */
   .menu .main-navigation ul li.school .sub-menu a {
     background-color: rgba(28, 117, 187, 0.9);
   }
-  /* line 91, ../scss/_mobile-menu.scss */
+  /* line 90, ../scss/_mobile-menu.scss */
   .menu .main-navigation ul li.jobseekers a {
     background-color: #f7931e;
   }
-  /* line 96, ../scss/_mobile-menu.scss */
+  /* line 95, ../scss/_mobile-menu.scss */
   .menu .main-navigation ul li.blog a {
     background-color: #f05b40;
   }
-  /* line 100, ../scss/_mobile-menu.scss */
+  /* line 99, ../scss/_mobile-menu.scss */
   .menu .main-navigation ul li a {
-    text-align: left;
+    text-align: left !important;
     color: white;
     display: block;
     text-decoration: none;
@@ -3749,7 +3749,7 @@ form.search input[type='text'] {
     font-size: 1.125em;
     line-height: 1.6em;
   }
-  /* line 113, ../scss/_mobile-menu.scss */
+  /* line 112, ../scss/_mobile-menu.scss */
   .menu .main-navigation ul li .sub-menu i {
     top: 12px;
     right: 8px;
@@ -3760,24 +3760,24 @@ form.search input[type='text'] {
     position: absolute;
   }
 
-  /* line 127, ../scss/_mobile-menu.scss */
+  /* line 126, ../scss/_mobile-menu.scss */
   .plan-find-mobile {
     display: block;
     position: absolute;
     z-index: 100;
     width: 100%;
   }
-  /* line 132, ../scss/_mobile-menu.scss */
+  /* line 131, ../scss/_mobile-menu.scss */
   .plan-find-mobile li {
     border-bottom: solid white 1px;
     display: table;
     width: 100%;
   }
-  /* line 136, ../scss/_mobile-menu.scss */
+  /* line 135, ../scss/_mobile-menu.scss */
   .plan-find-mobile li:last-child {
     border-bottom: solid white 0px;
   }
-  /* line 139, ../scss/_mobile-menu.scss */
+  /* line 138, ../scss/_mobile-menu.scss */
   .plan-find-mobile li a {
     display: table-cell;
     vertical-align: middle;
@@ -3794,16 +3794,16 @@ form.search input[type='text'] {
     font-size: 1.125em;
     line-height: 1.6em;
   }
-  /* line 153, ../scss/_mobile-menu.scss */
+  /* line 152, ../scss/_mobile-menu.scss */
   .plan-find-mobile.toggle {
     display: none;
   }
 
-  /* line 159, ../scss/_mobile-menu.scss */
+  /* line 158, ../scss/_mobile-menu.scss */
   .hasSub {
     position: relative;
   }
-  /* line 161, ../scss/_mobile-menu.scss */
+  /* line 160, ../scss/_mobile-menu.scss */
   .hasSub .fa-angle-down {
     position: absolute;
     top: 0;
@@ -3812,25 +3812,25 @@ form.search input[type='text'] {
     cursor: pointer;
     line-height: 63px;
   }
-  /* line 169, ../scss/_mobile-menu.scss */
+  /* line 168, ../scss/_mobile-menu.scss */
   .hasSub .sub-menu {
     display: none;
     left: -100%;
   }
-  /* line 172, ../scss/_mobile-menu.scss */
+  /* line 171, ../scss/_mobile-menu.scss */
   .hasSub .sub-menu .first {
     border-top: solid 1px rgba(255, 255, 255, 0.9);
   }
-  /* line 174, ../scss/_mobile-menu.scss */
+  /* line 173, ../scss/_mobile-menu.scss */
   .hasSub .sub-menu .first ul {
     border-top: solid 1px rgba(255, 255, 255, 0.9);
   }
-  /* line 181, ../scss/_mobile-menu.scss */
+  /* line 180, ../scss/_mobile-menu.scss */
   .hasSub .sub-menu li .sub-inner-menu li a {
     font-size: 0.875em;
     line-height: 1.37143em;
   }
-  /* line 188, ../scss/_mobile-menu.scss */
+  /* line 187, ../scss/_mobile-menu.scss */
   .hasSub:hover .sub-menu {
     display: block;
   }
