@@ -15,28 +15,18 @@
 				padding: 0.3em 0;
 				position: relative;
 				border-right: solid 1px $white;
-				// @media screen and (max-width: 37.5em) {
-				// 	width: 100%;
-				// 	border: none;
-				// 	display: block;
-				// 	float: none;
-				// 	padding: 0px;
-				// 	@include clearfix;
-				// }
 				&:first-child {
 					border-left: solid 1px $white;
-					// @media screen and (max-width: 37.5em) {
-					// 	border: none;
-					// }
 				}
-					&.travel { //Travel
+					&.travel { //Travel menu
 						background-color: $green;
 						&:hover {
 							background-color: $green;
 						}
 						.menu-wrapper {
 							background-color: $green;
-							width: 100%;
+							//width: 100%;
+							width: 460px;
 							.sub-menu {
 								background-color: $green;
 								width: 100%;
@@ -88,9 +78,6 @@
 						.menu-wrapper {
 							width: 460px;
 							background-color: $dark-blue;
-							// @media screen and (max-width: 37.5em) {
-							// 	width: 100% !important;
-							// }
 							.sub-menu {
 								background-color: $dark-blue;
 								width: 50%;
@@ -135,16 +122,12 @@
 						z-index: 200;
 						padding: 10px 5px;
 						left: 0;
+						height: 266px;
 						border-top: solid 1px $white;
 						@include clearfix;
-						// @media screen and (max-width: 37.5em) {
-						// 	width: 100% !important;
-						// 	position: relative !important;
-						// }
 						//Submenu
 						.sub-menu {
 							position: relative;
-							//display: block;
 							float: left;
 							@include clearfix;
 							li {
@@ -165,34 +148,31 @@
 										color: $white;
 									}
 								}
+								p { //Small type in menu
+									@include adjust-font-size-to(12px, 0.75);
+									color: rgba($white, 0.8);
+									float: left;
+									position: absolute;
+									top: 20px;
+									left: 50px;
+								}
 								i {
 									background:transparent url('../img/icons-s1398ce0c98.png') no-repeat;
 									display: block;
 									width: 26px;
 									height: 32px;
 									margin-left: 10px;
-									// @media screen and (max-width: 37.5em) {
-									// 	float: right !important;
-									// }
 								}
 								@media screen and (max-width: 37.5em) {
 									background: none;
 									border-bottom: solid 1px $white;
 								}
 							}
-							// @media screen and (max-width: 37.5em) {
-							// 	width: 100% !important;
-							// 	float: none;
-							// }
 						}
 						.menu {
 							background: url(../img/bg-hr.gif) no-repeat center bottom;
 							padding-bottom: 10px;
 							margin-bottom: 10px;
-							// @media screen and (max-width: 37.5em) {
-							// 	background: none;
-							// 	@include clearfix;
-							// }
 							&:last-child {
 								background: none;
 								padding-bottom: 0px;

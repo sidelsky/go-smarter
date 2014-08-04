@@ -3946,126 +3946,126 @@ footer {
     position: relative;
     border-right: solid 1px white;
   }
-  /* line 26, ../scss/_desktop-menu.scss */
+  /* line 18, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li:first-child {
     border-left: solid 1px white;
   }
-  /* line 32, ../scss/_desktop-menu.scss */
+  /* line 21, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.travel {
     background-color: #8dc53e;
   }
-  /* line 34, ../scss/_desktop-menu.scss */
+  /* line 23, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.travel:hover {
     background-color: #8dc53e;
   }
-  /* line 37, ../scss/_desktop-menu.scss */
+  /* line 26, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.travel .menu-wrapper {
     background-color: #8dc53e;
-    width: 100%;
+    width: 460px;
   }
-  /* line 40, ../scss/_desktop-menu.scss */
+  /* line 30, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.travel .menu-wrapper .sub-menu {
     background-color: #8dc53e;
     width: 100%;
   }
-  /* line 43, ../scss/_desktop-menu.scss */
+  /* line 33, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.travel .menu-wrapper .sub-menu li {
     width: 100%;
   }
-  /* line 45, ../scss/_desktop-menu.scss */
+  /* line 35, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.travel .menu-wrapper .sub-menu li .alpha {
     background-position: -6px -87px;
     margin-bottom: 10px;
   }
-  /* line 49, ../scss/_desktop-menu.scss */
+  /* line 39, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.travel .menu-wrapper .sub-menu li .bravo {
     background-position: -7px -167px;
   }
-  /* line 56, ../scss/_desktop-menu.scss */
+  /* line 46, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.work {
     background-color: #92278f;
   }
-  /* line 58, ../scss/_desktop-menu.scss */
+  /* line 48, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.work:hover {
     background-color: #92278f;
   }
-  /* line 61, ../scss/_desktop-menu.scss */
+  /* line 51, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.work .menu-wrapper {
     width: 460px;
     background-color: #92278f;
   }
-  /* line 64, ../scss/_desktop-menu.scss */
+  /* line 54, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.work .menu-wrapper .sub-menu {
     background-color: #92278f;
     width: 50%;
   }
-  /* line 68, ../scss/_desktop-menu.scss */
+  /* line 58, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.work .menu-wrapper .sub-menu li {
     width: 100%;
   }
-  /* line 70, ../scss/_desktop-menu.scss */
+  /* line 60, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.work .menu-wrapper .sub-menu li.first {
     height: 110px;
   }
-  /* line 73, ../scss/_desktop-menu.scss */
+  /* line 63, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.work .menu-wrapper .sub-menu li .alpha {
     background-position: -6px -46px;
   }
-  /* line 76, ../scss/_desktop-menu.scss */
+  /* line 66, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.work .menu-wrapper .sub-menu li .bravo {
     background-position: -7px -206px;
   }
-  /* line 83, ../scss/_desktop-menu.scss */
+  /* line 73, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.school {
     background-color: #1c75bb;
   }
-  /* line 85, ../scss/_desktop-menu.scss */
+  /* line 75, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.school:hover {
     background-color: #1c75bb;
   }
-  /* line 88, ../scss/_desktop-menu.scss */
+  /* line 78, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.school .menu-wrapper {
     width: 460px;
     background-color: #1c75bb;
   }
-  /* line 94, ../scss/_desktop-menu.scss */
+  /* line 81, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.school .menu-wrapper .sub-menu {
     background-color: #1c75bb;
     width: 50%;
   }
-  /* line 97, ../scss/_desktop-menu.scss */
+  /* line 84, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.school .menu-wrapper .sub-menu li {
     width: 100%;
   }
-  /* line 99, ../scss/_desktop-menu.scss */
+  /* line 86, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.school .menu-wrapper .sub-menu li.first {
     height: 135px;
   }
-  /* line 102, ../scss/_desktop-menu.scss */
+  /* line 89, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.school .menu-wrapper .sub-menu li .alpha {
     background-position: -2px -125px;
   }
-  /* line 105, ../scss/_desktop-menu.scss */
+  /* line 92, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.school .menu-wrapper .sub-menu li .bravo {
     background-position: -7px -0px;
   }
-  /* line 112, ../scss/_desktop-menu.scss */
+  /* line 99, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.jobseekers {
     background-color: #f7931e;
   }
-  /* line 114, ../scss/_desktop-menu.scss */
+  /* line 101, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.jobseekers:hover {
     background-color: #f7931e;
   }
-  /* line 118, ../scss/_desktop-menu.scss */
+  /* line 105, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.blog {
     background-color: #f05b40;
   }
-  /* line 120, ../scss/_desktop-menu.scss */
+  /* line 107, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li.blog:hover {
     background-color: #f05b40;
   }
-  /* line 124, ../scss/_desktop-menu.scss */
+  /* line 111, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li a {
     color: white;
     display: block;
@@ -4075,13 +4075,14 @@ footer {
     font-size: 0.9375em;
     line-height: 1.6em;
   }
-  /* line 132, ../scss/_desktop-menu.scss */
+  /* line 119, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li .menu-wrapper {
     position: absolute;
     top: 38px;
     z-index: 200;
     padding: 10px 5px;
     left: 0;
+    height: 266px;
     border-top: solid 1px white;
     *zoom: 1;
   }
@@ -4094,7 +4095,7 @@ footer {
   .menu .main-navigation ul > li .menu-wrapper:after {
     clear: both;
   }
-  /* line 145, ../scss/_desktop-menu.scss */
+  /* line 129, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li .menu-wrapper .sub-menu {
     position: relative;
     float: left;
@@ -4109,7 +4110,7 @@ footer {
   .menu .main-navigation ul > li .menu-wrapper .sub-menu:after {
     clear: both;
   }
-  /* line 150, ../scss/_desktop-menu.scss */
+  /* line 133, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li .menu-wrapper .sub-menu li {
     border: none;
     display: block;
@@ -4125,11 +4126,11 @@ footer {
   .menu .main-navigation ul > li .menu-wrapper .sub-menu li:after {
     clear: both;
   }
-  /* line 155, ../scss/_desktop-menu.scss */
+  /* line 138, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li .menu-wrapper .sub-menu li:last-child {
     background: none;
   }
-  /* line 158, ../scss/_desktop-menu.scss */
+  /* line 141, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li .menu-wrapper .sub-menu li a {
     text-align: left !important;
     -webkit-transition: all 0.5s ease-out;
@@ -4138,7 +4139,7 @@ footer {
     transition: all 0.5s ease-out;
     color: rgba(255, 255, 255, 0.8);
   }
-  /* line 162, ../scss/_desktop-menu.scss */
+  /* line 145, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li .menu-wrapper .sub-menu li a:hover {
     padding-left: 5px;
     -webkit-transition: all 0.2s ease-in;
@@ -4147,7 +4148,17 @@ footer {
     transition: all 0.2s ease-in;
     color: white;
   }
-  /* line 168, ../scss/_desktop-menu.scss */
+  /* line 151, ../scss/_desktop-menu.scss */
+  .menu .main-navigation ul > li .menu-wrapper .sub-menu li p {
+    font-size: 0.75em;
+    line-height: 1.5em;
+    color: rgba(255, 255, 255, 0.8);
+    float: left;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+  }
+  /* line 159, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li .menu-wrapper .sub-menu li i {
     background: transparent url("../img/icons-s1398ce0c98.png") no-repeat;
     display: block;
@@ -4155,19 +4166,19 @@ footer {
     height: 32px;
     margin-left: 10px;
   }
-  /* line 188, ../scss/_desktop-menu.scss */
+  /* line 172, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li .menu-wrapper .menu {
     background: url(../img/bg-hr.gif) no-repeat center bottom;
     padding-bottom: 10px;
     margin-bottom: 10px;
   }
-  /* line 196, ../scss/_desktop-menu.scss */
+  /* line 176, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li .menu-wrapper .menu:last-child {
     background: none;
     padding-bottom: 0px;
     margin-bottom: 0px;
   }
-  /* line 201, ../scss/_desktop-menu.scss */
+  /* line 181, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li .menu-wrapper .menu li {
     display: block;
     background: none !important;
@@ -4185,11 +4196,11 @@ footer {
     clear: both;
   }
 
-  /* line 216, ../scss/_desktop-menu.scss */
+  /* line 196, ../scss/_desktop-menu.scss */
   .hasSub {
     position: relative;
   }
-  /* line 218, ../scss/_desktop-menu.scss */
+  /* line 198, ../scss/_desktop-menu.scss */
   .hasSub .fa-angle-down {
     position: absolute;
     top: 0;
@@ -4198,17 +4209,17 @@ footer {
     cursor: pointer;
     line-height: 38px;
   }
-  /* line 226, ../scss/_desktop-menu.scss */
+  /* line 206, ../scss/_desktop-menu.scss */
   .hasSub .menu-wrapper {
     display: none;
   }
-  /* line 229, ../scss/_desktop-menu.scss */
+  /* line 209, ../scss/_desktop-menu.scss */
   .hasSub:hover .menu-wrapper {
     display: block;
   }
 }
 @media screen and (min-width: 60em) and (max-width: 37.5em) {
-  /* line 150, ../scss/_desktop-menu.scss */
+  /* line 133, ../scss/_desktop-menu.scss */
   .menu .main-navigation ul > li .menu-wrapper .sub-menu li {
     background: none;
     border-bottom: solid 1px white;
