@@ -2,23 +2,22 @@
 	background: $white;
 	position: relative;
 	.inner {
-		//@extend %bdr;
+		@extend clearfix;
+		position: relative;
 		@extend %max-width;
 		margin: 0 auto;
 		position: relative;
 		.logo-container {
 			height: 112px;
-			@media screen and (max-width: 37.5em) {
+			@media screen and (max-width: 60em) {
 				height: $header-height;
 			}
 			position: relative;
 			.logo {
 				width: 192px;
 				margin-top: 20px;
+				padding-left: 1em;
 				@media screen and (max-width: 60em) {
-					padding-left: 1em;
-				}
-				@media screen and (max-width: 37.5em) {
 					width: 130px;
 				}
 			}
@@ -27,15 +26,17 @@
 }
 
 
-#mobile {
+#mobile,
+.plan-find-mobile {
 	display: none;
 }
 
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 60em) {
 	#desktop {
 		display: none;
 	}
-	#mobile {
+	#mobile,
+	.plan-find-mobile {
 		display: block;
 	}
 }

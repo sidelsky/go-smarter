@@ -1,0 +1,8 @@
+footer {
+	max-width: 90em;
+	margin: 0 auto;
+	//@extend %bdr;
+	@include adjust-font-size-to(12px, 1);
+	padding: 2em;
+	text-align: center;
+}

@@ -1,0 +1,54 @@
+.left {
+	width: 60%;
+	@include transition(width 0.8s ease-in-out);
+	@media screen and (max-width: 60em) {
+		width: 100%;
+	}
+	&.open {
+		width: 100%;
+		@include transition(width 0.8s ease-in-out);
+  	}
+  	.slider {
+  		.flexslider {
+  			position: absolute;
+  			top: 0;
+  			bottom: 0;
+  			left: 0;
+  			right: 0;
+  			.flex-viewport {
+  				height: 100% !important;
+					//@extend %bdr;
+					.slides {
+						height: 100% !important;
+						//width: 100% !important;
+						li {
+							//width: 100% !important;
+							&.bg-image {
+								height: 100% !important;
+								position: relative;
+								background-position: center center;
+								background-size: cover;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+body.inner {
+	.left {
+		.slider {
+			//@extend %bdr;
+			@include clearfix;
+			.flexslider {
+				@media screen and (max-width: 60em) {
+				//position: relative;
+				height: 350px;
+				position: relative;
+				}
+			}
+		}
+	}
+}

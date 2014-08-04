@@ -1,5 +1,5 @@
 header {
-background-color: red;
+
 }
 
 
@@ -10,7 +10,7 @@ background-color: red;
 	left: 0;
 	right: 0;
 	z-index: 0;
-	@media screen and (max-width: 37.5em) {
+	@media screen and (max-width: 60em) {
 		top: $header-height;
 	}
 	.col {
@@ -18,64 +18,23 @@ background-color: red;
 		top: 0;
 		bottom: 0;
 	}
-	.left {
+}
+
+
+body.inner {
+	.wrapper {
+		.left {
+		//@extend %bdr;
+		@include clearfix;
+		float: left;
 		width: 60%;
-		@include transition(width 0.8s ease-in-out);
-		@media screen and (max-width: 37.5em) {
+		@media screen and (max-width:60em) {
 			width: 100%;
-		}
-		&.open {
-			width: 100%;
-			@include transition(width 0.8s ease-in-out);
-//			@include transition-duration(0.5s);
-//			@include transition-timing-function(ease-in);
-//			@include transition-property(width);
-  		//@include transition-delay(2s);
-		}
-		.slider {
-			.flexslider {
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				.flex-viewport {
-					height: 100% !important;
-					//@extend %bdr;
-					.slides {
-						height: 100% !important;
-						//width: 100% !important;
-						li {
-							//width: 100% !important;
-							&.bg-image {
-								height: 100% !important;
-								position: relative;
-								background-position: center center;
-								background-size: cover;
-							}
-						}
-					}
-				}
 			}
 		}
 	}
 }
 
-
-
-// body.sub-inner {
-// 	.wrapper {
-// 		position: absolute;
-// 		min-height: 800px;
-// 		.col {
-// 			@extend %bdr;
-// 			position: relative;
-// 		}
-// 		.inner {
-// 			max-height: 800px;
-// 		}
-// 	}
-// }
 
 
 body.sub-inner {
@@ -84,35 +43,33 @@ body.sub-inner {
 		position: relative;
 		top: 0px;
 		@include clearfix;
-	.left {
+		.left {
+		//@extend %bdr;
+		@include clearfix;
 		float: left;
 		width: 60%;
+		@media screen and (max-width:60em) {
+			width: 100%;
+		}
 		.content {
-			width: 742px;
+			max-width: 740px;
+			//width: 100%;
 			float: right;
+			@media screen and (max-width:60em) {
+				width: 100%;
+			}
 			.padme {
 				img {
 					@include rhythm(1, 0, 0, 0); //Margin top, Padding top, Padding bottom, Margin bottom
 					width: 100%;
+					}
 				}
 			}
 		}
 	}
-	.right {
-		width: 40%;
-		right: 0;
-		float: right;
-		//display: table-cell;
-		.inner {
-			max-width: 450px;
-			position: relative;
-			color: $white;
-		}
-	}
- }
 }
- 
- 
+
+
 .info-box {
 	width: 480px;
 	position: absolute;
@@ -124,11 +81,11 @@ body.sub-inner {
 	background: rgba( $blue, .5 );
 	color: $white;
 	@include text-shadow($black 1px 0px 2px);
-	@media screen and (max-width: 37.5em) {
-			bottom: 60px;
-			top: auto;
-			width: 100%;
-		}
+	@media screen and (max-width: 60em) {
+		bottom: 60px;
+		top: auto;
+		width: 100%;
+	}
 	.inner {
 		padding: 1em;
 		h2 {
@@ -160,11 +117,11 @@ body.sub-inner {
 		left: -2px;
 	}
 }
- 
+
 .jspTrack  {
-		background: rgba(0,0,0,0.5);
-		width: 1px;
-	}
+	background: rgba(0,0,0,0.5);
+	width: 1px;
+}
 
 
 body.sub-inner {
@@ -173,18 +130,18 @@ body.sub-inner {
 	}
 }
 
-/*.slides li  {
-		//width: 100% !important;
-	//width: 100% !important;
-//	position: absolute;
-//	top: 0;
-//	left: 0  !important;
-//	right: 0px !important;
-//	bottom: 0;
-	&.open {
-		//width: 100% !important;
-		@include transition-duration(0.5s);
-		@include transition-timing-function(ease-out);
-	}
-}*/
+// .slides li  {
+// 		//width: 100% !important;
+// 	//width: 100% !important;
+// //	position: absolute;
+// //	top: 0;
+// //	left: 0  !important;
+// //	right: 0px !important;
+// //	bottom: 0;
+// 	&.open {
+// 		//width: 100% !important;
+// 		@include transition-duration(0.5s);
+// 		@include transition-timing-function(ease-out);
+// 	}
+// 	}
 

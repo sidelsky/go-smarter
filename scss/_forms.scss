@@ -21,6 +21,7 @@ form {
 		-webkit-appearance: none;
   	-webkit-border-radius: 0px;
 		margin: 3px 0;
+		font-size: 16px;
 	}
 	
 	select {
@@ -35,15 +36,7 @@ form {
 //			@include transition(all 0.8s ease-in-out);
 //		}
 //	}
-	[placeholder]::-webkit-input-placeholder,
-	select {
-		color: $grey;
-	}	
-	
-	[placeholder]:focus::-webkit-input-placeholder {
-			@include transition(text-indent 0.8s ease-in-out);
-		  text-indent: -200%;
-		}
+
 	
 	input[type='submit'] {
 		border-bottom: 3px solid $dark-blue;
@@ -68,3 +61,28 @@ form {
 	}
 }
 
+header {
+	.inner {
+		form {
+			position: absolute;
+			right: 0;
+			top: 20px;
+			padding: 1em;
+			margin: 0;
+			input[type='text'] {
+				background: lighten($grey, 20%);
+			}
+		}
+	}
+}
+
+
+[placeholder]::-webkit-input-placeholder,
+select {
+	color: $grey;
+}	
+
+[placeholder]:focus::-webkit-input-placeholder {
+		@include transition(text-indent 0.8s ease-in-out);
+	  text-indent: -200%;
+	}

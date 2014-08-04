@@ -4,7 +4,7 @@
 @import "compass/typography/vertical_rhythm";
 @import "compass/css3";
 @import "compass/css3/transform";
-@import "typefaces.scss";
+//@import "typefaces.scss";
 @import "fontawesome/font-awesome.scss";
 @import "grid.scss";
 @import "vars.scss";
@@ -12,9 +12,11 @@
 @import "jscrollpane.scss";
 @import "structure.scss";
 @import "icons.scss";
+@import "left-side.scss";
 @import "right-side.scss";
 @import "forms.scss";
 @import "content.scss";
+@import "footer.scss";
 @import "hamburger-icon.scss";
 
 @import "mobile-menu.scss";
@@ -40,8 +42,9 @@ body,html {
 	height: 100%;	
 }
 body {
-	color: $black;
-	@extend %open_sansregular;
+	color: $dark-grey;
+	//@extend %open_sansregular;
+	font-family: "ff-tisa-sans-web-pro";
 	//background: lighten($black, 70%);
 	//background: #fff url('http://www.baselineme.com/6') center top repeat;
 }
@@ -64,13 +67,15 @@ html {
 h1, h2, h3, h4 {
 	margin: 0;
 	padding: 0;
-	@extend %open_sansbold;
+	//@extend %open_sansbold;
+	font-family: "ff-cocon-web-pro";
 	font-weight: 100;
 }
 
 h1, h2 {
-	@include adjust-font-size-to(48px, 6);
-	@include fittext($min-media: 200px, $max-media: 1900px, $min-font-size: 18px, $max-font-size: 48px, $media-increment: 100, $font-increment: 2.5, $ratio: 1, $round: false)
+	//@include adjust-font-size-to(48px, 6);
+	@include adjust-leading-to(2.3);
+	@include fittext($min-media: 200px, $max-media: 1400px, $min-font-size: 24px, $max-font-size: 48px, $media-increment: 100, $font-increment: 2.5, $ratio: 1, $round: false)
 	//@include rhythm(0, 0, 0, 2); //Margin top, Padding top, Padding bottom, Margin bottom
 }
 

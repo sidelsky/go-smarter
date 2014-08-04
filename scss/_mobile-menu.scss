@@ -1,5 +1,5 @@
 //Sub menu opacity var.
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 60em) {
 	.menu {
 		display: block;
 		position: absolute;
@@ -155,7 +155,7 @@
 	}
 
 
-	.hasSub {
+.hasSub {
 	position: relative;
 	.fa-angle-down {
 		position: absolute;
