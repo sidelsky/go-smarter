@@ -21,18 +21,7 @@
 <?php include 'desktop-menu.inc.php' ?>	
 
 <!-- Mobile menu -->
-<?php include 'mobile-menu.inc.php' ?> 
+<?php/* include 'mobile-menu.inc.php' */?> 
 
-<!-- Jobseekers -->
-<li class="jobseekers">
- <a href="#">Jobseekers</a>
-</li>
-<!-- Blog -->
-<li class="blog">
- <a href="http://www.wordpress.com">News and events</a>
-</li>
-</ul>
-</nav>
-</div>
 <!-- End mobile menu --> 	
 </header>

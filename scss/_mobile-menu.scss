@@ -5,7 +5,7 @@
 		position: absolute;
 		width: 100%;
 		z-index: 100;
-		left: -100%;
+		//left: -100%;
 		@include transition(all 0.4s ease-in-out);
 		&.toggle {
 			left: 0;
@@ -118,6 +118,9 @@
 							height: 32px;
 							position: absolute;
 						}
+						p {
+							display: none;
+						}
 					}
 				}
 			}
@@ -168,19 +171,11 @@
 	.sub-menu {
 		display: none;
 		left: -100%;
-		.first {
+		>li {
 			border-top: solid 1px rgba($white, 0.9);
 			ul {
 				border-top: solid 1px rgba($white, 0.9);
-			}
-		}
-		li {
-			.sub-inner-menu {
-				li {
-					a {
-						@include adjust-font-size-to(14px, 0.8);
-					}
-				}
+				@include adjust-font-size-to(12px, 0.8);
 			}
 		}
 	}

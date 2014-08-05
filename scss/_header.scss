@@ -2,7 +2,7 @@
 	background: $white;
 	position: relative;
 	.inner {
-		@extend clearfix;
+		@include clearfix();
 		position: relative;
 		@extend %max-width;
 		margin: 0 auto;
@@ -28,16 +28,16 @@
 
 #mobile,
 .plan-find-mobile {
-	display: none;
+	//display: none;
 }
 
 @media screen and (max-width: 60em) {
 	#desktop {
-		display: none;
+		//display: none;
 	}
 	#mobile,
 	.plan-find-mobile {
-		display: block;
+		//display: block;
 	}
 }
 
